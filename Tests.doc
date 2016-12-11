@@ -1,0 +1,13 @@
+Tests:- 
+
+API Call/Test Data--------------------------------------------------Expected----------------------Actual------------Results
+---------------------------------------------------------------------------------------------------------------------------
+searchAPITest("term=Gladiator&country=IN&media=movie&limit=1")------ArtistName: "Ridley Scott"----"Ridley Scott"----PASSED
+searchAPITest("term=Jessie&country=US&media=tvShow&limit=2")--------ArtistName: "JESSIE"----------"JESSIE"----------PASSED
+searchAPITest("term=The+BFG&country=US&media=musicVideo&limit=3")---ArtistName: "BFG"-------------"BFG"-------------PASSED
+searchAPITest("term=Forrest+Gump&country=US&media=ebook&limit=4")---Kind: "ebook"-----------------"ebook"-----------PASSED
+searchAPITest("term=Orange&country=IN&media=shortFilm&limit=5")-----ArtistName: ""----------------""----------------PASSED
+searchAPITest("term=Selenium&country=US&media=software&limit=200")--Kind: "software"--------------"software"--------PASSED
+searchAPITest("term=Last+Emperor&country=JP")-----------------------Country: "JP"-----------------"JP"--------------PASSED
+searchAPITest("term=Police+Story&country=CN&media=all")-------------Currency: "CNY"---------------"CNY"-------------PASSED
+---------------------------------------------------------------------------------------------------------------------------
